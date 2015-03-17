@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/mapcache_xml_generator">
+        <file alias="icons/logo">icons/logo.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Gary Sherman</author>
+ <class>MapcacheXmlGenerator</class>
+ <widget class="QDialog" name="MapcacheXmlGenerator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>731</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mapcache XML Generator</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Cache</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>cache</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>layout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="txtCacheLayout_2"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="txtXmlConfigFilePath">
+         <property name="toolTip">
+          <string>Name for the map file to be created from the QGIS project file</string>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="txtCacheTemplate_1"/>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="label_29">
+         <property name="text">
+          <string>host</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="4">
+        <widget class="QLineEdit" name="txtCacheTemplate_3"/>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>base</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="4">
+        <widget class="QLineEdit" name="txtCacheHost_3"/>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="label_200">
+         <property name="text">
+          <string>cache</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="label_27">
+         <property name="text">
+          <string>template</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_19">
+         <property name="text">
+          <string>cache</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QLabel" name="label_42">
+         <property name="text">
+          <string>layout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QLabel" name="label_33">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QLabel" name="label_43">
+         <property name="text">
+          <string>base</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="4">
+        <widget class="QLineEdit" name="txtCacheDbfile_2"/>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLineEdit" name="txtCacheDbfile_1"/>
+       </item>
+       <item row="13" column="4">
+        <widget class="QLineEdit" name="txtCacheType_4"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="txtCachePort_1"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>layout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="txtCacheType_1"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_32">
+         <property name="text">
+          <string>cache</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="3">
+        <widget class="QLabel" name="label_44">
+         <property name="text">
+          <string>template</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="2">
+        <widget class="QLineEdit" name="txtCacheLayout_4"/>
+       </item>
+       <item row="13" column="3">
+        <widget class="QLabel" name="label_40">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QLabel" name="label_38">
+         <property name="text">
+          <string>dbfile</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_47">
+         <property name="text">
+          <string>port</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="3">
+        <widget class="QLabel" name="label_45">
+         <property name="text">
+          <string>host</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="3">
+        <widget class="QLabel" name="label_46">
+         <property name="text">
+          <string>dbfile</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QLineEdit" name="txtCacheTemplate_2"/>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>dbfile</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="4">
+        <widget class="QLineEdit" name="txtCacheDbfile_4"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>XML config file</string>
+         </property>
+         <property name="buddy">
+          <cstring>txtXmlConfigFilePath</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QLineEdit" name="txtCacheType_2"/>
+       </item>
+       <item row="10" column="3">
+        <widget class="QLabel" name="label_35">
+         <property name="text">
+          <string>template</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="2">
+        <widget class="QLineEdit" name="txtCacheLayout_3"/>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLabel" name="label_39">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QLineEdit" name="txtCacheHost_2"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>template</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>host</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>base</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="3">
+        <widget class="QLabel" name="label_37">
+         <property name="text">
+          <string>host</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLineEdit" name="txtCacheBase_2"/>
+       </item>
+       <item row="13" column="2">
+        <widget class="QLineEdit" name="txtCacheName_4"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="port">
+         <property name="text">
+          <string>port</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>dbfile</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="2">
+        <widget class="QLineEdit" name="txtCacheBase_4"/>
+       </item>
+       <item row="11" column="2">
+        <widget class="QLineEdit" name="txtCacheBase_3"/>
+       </item>
+       <item row="14" column="4">
+        <widget class="QLineEdit" name="txtCacheTemplate_4"/>
+       </item>
+       <item row="3" column="4">
+        <widget class="QLineEdit" name="txtCacheHost_1"/>
+       </item>
+       <item row="9" column="2">
+        <widget class="QLineEdit" name="txtCacheName_3"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="txtCacheName_1">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="txtCacheLayout_1"/>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>layout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="4">
+        <widget class="QLineEdit" name="txtCacheType_3"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="txtCacheBase_1"/>
+       </item>
+       <item row="15" column="4">
+        <widget class="QLineEdit" name="txtCacheHost_4"/>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLabel" name="label_36">
+         <property name="text">
+          <string>base</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="txtCacheName_2"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QToolButton" name="btnChooseFile">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="4">
+        <widget class="QLineEdit" name="txtCacheDbfile_3"/>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLineEdit" name="txtCachePort_2"/>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLabel" name="label_48">
+         <property name="text">
+          <string>port</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="1">
+        <widget class="QLabel" name="label_49">
+         <property name="text">
+          <string>port</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QLineEdit" name="txtCachePort_3"/>
+       </item>
+       <item row="16" column="2">
+        <widget class="QLineEdit" name="txtCachePort_4"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Source</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="9" column="2">
+        <widget class="QLineEdit" name="txtSourceFormat_3"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_54">
+         <property name="text">
+          <string>format</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLabel" name="label_63">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_202">
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLabel" name="label_69">
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="label_58">
+         <property name="text">
+          <string>layers</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="4">
+        <widget class="QLineEdit" name="txtSourceType_3"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="txtSourceName_2"/>
+       </item>
+       <item row="9" column="3">
+        <widget class="QLabel" name="label_65">
+         <property name="text">
+          <string>layers</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_62">
+         <property name="text">
+          <string>source</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLabel" name="label_70">
+         <property name="text">
+          <string>format</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="label_57">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_53">
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_52">
+         <property name="text">
+          <string>source</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="txtSourceFormat_1"/>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="txtSourceType_1"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="txtSourceLayer_1"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>layers</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>format</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="txtSourceName_1"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_60">
+         <property name="text">
+          <string>source</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="label_64">
+         <property name="text">
+          <string>format</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLineEdit" name="txtSourceName_3"/>
+       </item>
+       <item row="5" column="4">
+        <widget class="QLineEdit" name="txtSourceLayer_2"/>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLineEdit" name="txtSourceType_2"/>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="txtSourceFormat_2"/>
+       </item>
+       <item row="9" column="4">
+        <widget class="QLineEdit" name="txtSourceLayer_3"/>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_73">
+         <property name="text">
+          <string>source</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QLabel" name="label_74">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="3">
+        <widget class="QLabel" name="label_75">
+         <property name="text">
+          <string>layers</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QLineEdit" name="txtSourceName_4"/>
+       </item>
+       <item row="12" column="4">
+        <widget class="QLineEdit" name="txtSourceType_4"/>
+       </item>
+       <item row="13" column="2">
+        <widget class="QLineEdit" name="txtSourceFormat_4"/>
+       </item>
+       <item row="13" column="4">
+        <widget class="QLineEdit" name="txtSourceLayer_4"/>
+       </item>
+       <item row="3" column="4">
+        <widget class="QLineEdit" name="txtSourceConnectionTimeout_1"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_201">
+         <property name="text">
+          <string>connection_timeout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_50">
+         <property name="text">
+          <string>Referer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="txtSourceReferer_1"/>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="txtSourceUserAgent_1"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>User-Agent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QLineEdit" name="txtSourceConnectionTimeout_2"/>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="label_56">
+         <property name="text">
+          <string>connection_timeout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLineEdit" name="txtSourceReferer_2"/>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_59">
+         <property name="text">
+          <string>Referer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QLineEdit" name="txtSourceUserAgent_2"/>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="label_55">
+         <property name="text">
+          <string>User-Agent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="4">
+        <widget class="QLineEdit" name="txtSourceConnectionTimeout_3"/>
+       </item>
+       <item row="11" column="3">
+        <widget class="QLabel" name="label_68">
+         <property name="text">
+          <string>connection_timeout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLabel" name="label_67">
+         <property name="text">
+          <string>Referer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="2">
+        <widget class="QLineEdit" name="txtSourceReferer_3"/>
+       </item>
+       <item row="10" column="4">
+        <widget class="QLineEdit" name="txtSourceUserAgent_3"/>
+       </item>
+       <item row="10" column="3">
+        <widget class="QLabel" name="label_66">
+         <property name="text">
+          <string>User-Agent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="4">
+        <widget class="QLineEdit" name="txtSourceConnectionTimeout_4"/>
+       </item>
+       <item row="15" column="3">
+        <widget class="QLabel" name="label_72">
+         <property name="text">
+          <string>connection_timeout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QLabel" name="label_76">
+         <property name="text">
+          <string>Referer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="2">
+        <widget class="QLineEdit" name="txtSourceReferer_4"/>
+       </item>
+       <item row="14" column="4">
+        <widget class="QLineEdit" name="txtSourceUserAgent_4"/>
+       </item>
+       <item row="14" column="3">
+        <widget class="QLabel" name="label_71">
+         <property name="text">
+          <string>User-Agent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_41">
+         <property name="text">
+          <string>url</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="txtSourceUrl_1"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_51">
+         <property name="text">
+          <string>url</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLabel" name="label_61">
+         <property name="text">
+          <string>url</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QLabel" name="label_128">
+         <property name="text">
+          <string>url</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="txtSourceUrl_2"/>
+       </item>
+       <item row="10" column="2">
+        <widget class="QLineEdit" name="txtSourceUrl_3"/>
+       </item>
+       <item row="14" column="2">
+        <widget class="QLineEdit" name="txtSourceUrl_4"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Tileset</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="txtTilesetName">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QLineEdit" name="txtTilesetSource">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_20">
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_199">
+         <property name="text">
+          <string>source</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QLabel" name="label_81">
+         <property name="text">
+          <string>restricted_extent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_23">
+         <property name="text">
+          <string>minzoom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QLineEdit" name="txtTilesetGridText_2"/>
+       </item>
+       <item row="10" column="2">
+        <widget class="QLineEdit" name="txtTilesetGridMinzoom_2"/>
+       </item>
+       <item row="11" column="2">
+        <widget class="QLineEdit" name="txtTilesetMetadataTitle"/>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLabel" name="label_84">
+         <property name="text">
+          <string>title</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QLabel" name="label_97">
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="3">
+        <widget class="QLabel" name="label_100">
+         <property name="text">
+          <string>default</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="1">
+        <widget class="QLabel" name="label_98">
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="label_101">
+         <property name="text">
+          <string>dimension</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QLabel" name="label_92">
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="3">
+        <widget class="QLabel" name="label_96">
+         <property name="text">
+          <string>default</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="2">
+        <widget class="QLineEdit" name="txtTilesetDimensionName_1"/>
+       </item>
+       <item row="19" column="1">
+        <widget class="QLabel" name="label_102">
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="4">
+        <widget class="QLineEdit" name="txtTilesetDimensionDefault_2"/>
+       </item>
+       <item row="17" column="4">
+        <widget class="QLineEdit" name="txtTilesetDimensionType_2"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_77">
+         <property name="text">
+          <string>grid</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_86">
+         <property name="text">
+          <string>metadata</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_78">
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="3">
+        <widget class="QLabel" name="label_82">
+         <property name="text">
+          <string>maxzoom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QLineEdit" name="txtTilesetGridRestrictedExtent_1"/>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLabel" name="label_24">
+         <property name="text">
+          <string>maxzoom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="2">
+        <widget class="QLineEdit" name="txtTilesetDimensionText_1"/>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="label_22">
+         <property name="text">
+          <string>restricted_extent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="4">
+        <widget class="QLineEdit" name="txtTilesetGridMaxzoom_1"/>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLineEdit" name="txtTilesetGridText_1"/>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLabel" name="label_80">
+         <property name="text">
+          <string>minzoom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="4">
+        <widget class="QLineEdit" name="txtTilesetGridMaxzoom_2"/>
+       </item>
+       <item row="9" column="4">
+        <widget class="QLineEdit" name="txtTilesetGridRestrictedExtent_2"/>
+       </item>
+       <item row="11" column="3">
+        <widget class="QLabel" name="label_85">
+         <property name="text">
+          <string>abstract</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="2">
+        <widget class="QLineEdit" name="txtTilesetDimensionName_2"/>
+       </item>
+       <item row="16" column="4">
+        <widget class="QLineEdit" name="txtTilesetDimensionDefault_1"/>
+       </item>
+       <item row="15" column="4">
+        <widget class="QLineEdit" name="txtTilesetDimensionType_1"/>
+       </item>
+       <item row="17" column="3">
+        <widget class="QLabel" name="label_99">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="3">
+        <widget class="QLabel" name="label_93">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="label_94">
+         <property name="text">
+          <string>dimension</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="4">
+        <widget class="QLineEdit" name="txtTilesetMetadataAbstract"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_83">
+         <property name="text">
+          <string>grid</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="label_79">
+         <property name="text">
+          <string>text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLineEdit" name="txtTilesetGridMinzoom_1"/>
+       </item>
+       <item row="17" column="2">
+        <widget class="QLineEdit" name="txtTilesetDimensionText_2"/>
+       </item>
+       <item row="16" column="1">
+        <widget class="QLabel" name="label_95">
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="1">
+        <widget class="QLabel" name="label_103">
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="0">
+        <widget class="QLabel" name="label_104">
+         <property name="text">
+          <string>dimension</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="3">
+        <widget class="QLabel" name="label_105">
+         <property name="text">
+          <string>type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="3">
+        <widget class="QLabel" name="label_106">
+         <property name="text">
+          <string>default</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="2">
+        <widget class="QLineEdit" name="txtTilesetDimensionText_3"/>
+       </item>
+       <item row="20" column="2">
+        <widget class="QLineEdit" name="txtTilesetDimensionName_3"/>
+       </item>
+       <item row="19" column="4">
+        <widget class="QLineEdit" name="txtTilesetDimensionType_3"/>
+       </item>
+       <item row="20" column="4">
+        <widget class="QLineEdit" name="txtTilesetDimensionDefault_3"/>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLineEdit" name="txtTilesetFormat"/>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="label_89">
+         <property name="text">
+          <string>metabuffer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="txtTilesetMetatile"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="txtTilesetCache"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_88">
+         <property name="text">
+          <string>metatile</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="label_87">
+         <property name="text">
+          <string>format</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QLineEdit" name="txtTilesetMetabuffer"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_129">
+         <property name="text">
+          <string>cache</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_90">
+         <property name="text">
+          <string>expires</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="txtTilesetExpires"/>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="label_91">
+         <property name="text">
+          <string>auto_expire</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QLineEdit" name="txtTilesetAutoExpire"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Service</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_118">
+         <property name="text">
+          <string>type*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="txtServiceEnabled_1">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="txtServiceResampleMode_1">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>full_wms</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>type*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="txtTinyowsLogLevel">
+         <property name="text">
+          <string>resample_mode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="txtServiceFullWms_1">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="txtServiceType_1">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="txtServiceType_4"/>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="label_125">
+         <property name="text">
+          <string>enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QLineEdit" name="txtServiceEnabled_5"/>
+       </item>
+       <item row="4" column="4">
+        <widget class="QLineEdit" name="txtServiceEnabled_3"/>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLineEdit" name="txtServiceType_7"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="txtServiceFormat_1"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_121">
+         <property name="text">
+          <string>enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_116">
+         <property name="text">
+          <string>type*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_110">
+         <property name="text">
+          <string>type*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QLineEdit" name="txtServiceEnabled_2"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_114">
+         <property name="text">
+          <string>service</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_113">
+         <property name="text">
+          <string>service</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_21">
+         <property name="text">
+          <string>service</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLineEdit" name="txtServiceType_6"/>
+       </item>
+       <item row="7" column="4">
+        <widget class="QLineEdit" name="txtServiceEnabled_6"/>
+       </item>
+       <item row="8" column="4">
+        <widget class="QLineEdit" name="txtServiceEnabled_7"/>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="label_124">
+         <property name="text">
+          <string>enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="label_123">
+         <property name="text">
+          <string>enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_115">
+         <property name="text">
+          <string>service</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_120">
+         <property name="text">
+          <string>type*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_108">
+         <property name="text">
+          <string>maxsize</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_119">
+         <property name="text">
+          <string>type*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_109">
+         <property name="text">
+          <string>service</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QLineEdit" name="txtServiceEnabled_4"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_117">
+         <property name="text">
+          <string>type*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLabel" name="label_126">
+         <property name="text">
+          <string>enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_107">
+         <property name="text">
+          <string>format</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_111">
+         <property name="text">
+          <string>service</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="txtServiceType_2"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_112">
+         <property name="text">
+          <string>service</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="txtServiceMaxsize_1"/>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="txtServiceType_5"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="txtServiceType_3"/>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="label_122">
+         <property name="text">
+          <string>enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Grid</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="txtGridExtent">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>extent</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="txtGridUnits">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>350</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="txtTinyowsLogLevel">
+         <property name="text">
+          <string>units</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="txtGridSize">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_130">
+         <property name="text">
+          <string>title*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>srs</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="txtGridTitle"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_131">
+         <property name="text">
+          <string>metadata</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QLineEdit" name="txtGridWellKnownScaleSet"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="txtGridSrs">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_127">
+         <property name="text">
+          <string>resolutions</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>size</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_132">
+         <property name="text">
+          <string>WellKnownScaleSet</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="txtGridResolution"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_133">
+         <property name="text">
+          <string>name*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="txtGridName"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>txtXmlConfigFilePath</tabstop>
+  <tabstop>txtCacheName_1</tabstop>
+  <tabstop>txtCacheType_1</tabstop>
+  <tabstop>txtCacheLayout_1</tabstop>
+  <tabstop>txtCacheTemplate_1</tabstop>
+  <tabstop>txtCacheBase_1</tabstop>
+  <tabstop>txtCacheHost_1</tabstop>
+  <tabstop>txtCachePort_1</tabstop>
+  <tabstop>txtCacheDbfile_1</tabstop>
+  <tabstop>txtCacheName_2</tabstop>
+  <tabstop>txtCacheType_2</tabstop>
+  <tabstop>txtCacheLayout_2</tabstop>
+  <tabstop>txtCacheTemplate_2</tabstop>
+  <tabstop>txtCacheBase_2</tabstop>
+  <tabstop>txtCacheHost_2</tabstop>
+  <tabstop>txtCachePort_2</tabstop>
+  <tabstop>txtCacheDbfile_2</tabstop>
+  <tabstop>txtCacheName_3</tabstop>
+  <tabstop>txtCacheType_3</tabstop>
+  <tabstop>txtCacheLayout_3</tabstop>
+  <tabstop>txtCacheTemplate_3</tabstop>
+  <tabstop>txtCacheBase_3</tabstop>
+  <tabstop>txtCacheHost_3</tabstop>
+  <tabstop>txtCachePort_3</tabstop>
+  <tabstop>txtCacheDbfile_3</tabstop>
+  <tabstop>txtCacheName_4</tabstop>
+  <tabstop>txtCacheType_4</tabstop>
+  <tabstop>txtCacheLayout_4</tabstop>
+  <tabstop>txtCacheTemplate_4</tabstop>
+  <tabstop>txtCacheBase_4</tabstop>
+  <tabstop>txtCacheHost_4</tabstop>
+  <tabstop>txtCachePort_4</tabstop>
+  <tabstop>txtCacheDbfile_4</tabstop>
+  <tabstop>txtSourceName_1</tabstop>
+  <tabstop>txtSourceType_1</tabstop>
+  <tabstop>txtSourceFormat_1</tabstop>
+  <tabstop>txtSourceLayer_1</tabstop>
+  <tabstop>txtSourceUrl_1</tabstop>
+  <tabstop>txtSourceUserAgent_1</tabstop>
+  <tabstop>txtSourceReferer_1</tabstop>
+  <tabstop>txtSourceConnectionTimeout_1</tabstop>
+  <tabstop>txtSourceName_2</tabstop>
+  <tabstop>txtSourceType_2</tabstop>
+  <tabstop>txtSourceFormat_2</tabstop>
+  <tabstop>txtSourceLayer_2</tabstop>
+  <tabstop>txtSourceUrl_2</tabstop>
+  <tabstop>txtSourceUserAgent_2</tabstop>
+  <tabstop>txtSourceReferer_2</tabstop>
+  <tabstop>txtSourceConnectionTimeout_2</tabstop>
+  <tabstop>txtSourceName_3</tabstop>
+  <tabstop>txtSourceType_3</tabstop>
+  <tabstop>txtSourceFormat_3</tabstop>
+  <tabstop>txtSourceLayer_3</tabstop>
+  <tabstop>txtSourceUrl_3</tabstop>
+  <tabstop>txtSourceUserAgent_3</tabstop>
+  <tabstop>txtSourceReferer_3</tabstop>
+  <tabstop>txtSourceConnectionTimeout_3</tabstop>
+  <tabstop>txtSourceName_4</tabstop>
+  <tabstop>txtSourceType_4</tabstop>
+  <tabstop>txtSourceFormat_4</tabstop>
+  <tabstop>txtSourceLayer_4</tabstop>
+  <tabstop>txtSourceUrl_4</tabstop>
+  <tabstop>txtSourceUserAgent_4</tabstop>
+  <tabstop>txtSourceReferer_4</tabstop>
+  <tabstop>txtSourceConnectionTimeout_4</tabstop>
+  <tabstop>txtTilesetName</tabstop>
+  <tabstop>txtTilesetSource</tabstop>
+  <tabstop>txtTilesetCache</tabstop>
+  <tabstop>txtTilesetFormat</tabstop>
+  <tabstop>txtTilesetMetatile</tabstop>
+  <tabstop>txtTilesetMetabuffer</tabstop>
+  <tabstop>txtTilesetExpires</tabstop>
+  <tabstop>txtTilesetAutoExpire</tabstop>
+  <tabstop>txtTilesetGridText_1</tabstop>
+  <tabstop>txtTilesetGridRestrictedExtent_1</tabstop>
+  <tabstop>txtTilesetGridMinzoom_1</tabstop>
+  <tabstop>txtTilesetGridMaxzoom_1</tabstop>
+  <tabstop>txtTilesetGridText_2</tabstop>
+  <tabstop>txtTilesetGridRestrictedExtent_2</tabstop>
+  <tabstop>txtTilesetGridMinzoom_2</tabstop>
+  <tabstop>txtTilesetGridMaxzoom_2</tabstop>
+  <tabstop>txtTilesetMetadataTitle</tabstop>
+  <tabstop>txtTilesetMetadataAbstract</tabstop>
+  <tabstop>txtTilesetDimensionText_1</tabstop>
+  <tabstop>txtTilesetDimensionType_1</tabstop>
+  <tabstop>txtTilesetDimensionName_1</tabstop>
+  <tabstop>txtTilesetDimensionDefault_1</tabstop>
+  <tabstop>txtTilesetDimensionText_2</tabstop>
+  <tabstop>txtTilesetDimensionType_2</tabstop>
+  <tabstop>txtTilesetDimensionName_2</tabstop>
+  <tabstop>txtTilesetDimensionDefault_2</tabstop>
+  <tabstop>txtTilesetDimensionText_3</tabstop>
+  <tabstop>txtTilesetDimensionType_3</tabstop>
+  <tabstop>txtTilesetDimensionName_3</tabstop>
+  <tabstop>txtTilesetDimensionDefault_3</tabstop>
+  <tabstop>txtServiceType_1</tabstop>
+  <tabstop>txtServiceEnabled_1</tabstop>
+  <tabstop>txtServiceFullWms_1</tabstop>
+  <tabstop>txtServiceResampleMode_1</tabstop>
+  <tabstop>txtServiceFormat_1</tabstop>
+  <tabstop>txtServiceMaxsize_1</tabstop>
+  <tabstop>txtServiceType_2</tabstop>
+  <tabstop>txtServiceEnabled_2</tabstop>
+  <tabstop>txtServiceType_3</tabstop>
+  <tabstop>txtServiceEnabled_3</tabstop>
+  <tabstop>txtServiceType_4</tabstop>
+  <tabstop>txtServiceEnabled_4</tabstop>
+  <tabstop>txtServiceType_5</tabstop>
+  <tabstop>txtServiceEnabled_5</tabstop>
+  <tabstop>txtServiceType_6</tabstop>
+  <tabstop>txtServiceEnabled_6</tabstop>
+  <tabstop>txtServiceType_7</tabstop>
+  <tabstop>txtServiceEnabled_7</tabstop>
+  <tabstop>txtGridName</tabstop>
+  <tabstop>txtGridExtent</tabstop>
+  <tabstop>txtGridSize</tabstop>
+  <tabstop>txtGridUnits</tabstop>
+  <tabstop>txtGridSrs</tabstop>
+  <tabstop>txtGridResolution</tabstop>
+  <tabstop>txtGridTitle</tabstop>
+  <tabstop>txtGridWellKnownScaleSet</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>btnChooseFile</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>MapcacheXmlGenerator</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>453</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>240</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>MapcacheXmlGenerator</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
