@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'mapcachexmlgenerator.ui'
 #
-# Created: Mon Mar 16 22:48:14 2015
+# Created: Tue Mar 17 19:47:35 2015
 #      by: PyQt4 UI code generator 4.11.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -441,18 +441,15 @@ class Ui_MapcacheXmlGenerator(object):
         self.label_71 = QtGui.QLabel(self.tab_2)
         self.label_71.setObjectName(_fromUtf8("label_71"))
         self.gridLayout_7.addWidget(self.label_71, 14, 3, 1, 1)
-        self.label_41 = QtGui.QLabel(self.tab_2)
-        self.label_41.setObjectName(_fromUtf8("label_41"))
-        self.gridLayout_7.addWidget(self.label_41, 2, 1, 1, 1)
         self.txtSourceUrl_1 = QtGui.QLineEdit(self.tab_2)
         self.txtSourceUrl_1.setObjectName(_fromUtf8("txtSourceUrl_1"))
         self.gridLayout_7.addWidget(self.txtSourceUrl_1, 2, 2, 1, 1)
-        self.label_51 = QtGui.QLabel(self.tab_2)
-        self.label_51.setObjectName(_fromUtf8("label_51"))
-        self.gridLayout_7.addWidget(self.label_51, 6, 1, 1, 1)
-        self.label_61 = QtGui.QLabel(self.tab_2)
-        self.label_61.setObjectName(_fromUtf8("label_61"))
-        self.gridLayout_7.addWidget(self.label_61, 10, 1, 1, 1)
+        self.label_223 = QtGui.QLabel(self.tab_2)
+        self.label_223.setObjectName(_fromUtf8("label_223"))
+        self.gridLayout_7.addWidget(self.label_223, 6, 1, 1, 1)
+        self.label_224 = QtGui.QLabel(self.tab_2)
+        self.label_224.setObjectName(_fromUtf8("label_224"))
+        self.gridLayout_7.addWidget(self.label_224, 10, 1, 1, 1)
         self.label_128 = QtGui.QLabel(self.tab_2)
         self.label_128.setObjectName(_fromUtf8("label_128"))
         self.gridLayout_7.addWidget(self.label_128, 14, 1, 1, 1)
@@ -465,6 +462,9 @@ class Ui_MapcacheXmlGenerator(object):
         self.txtSourceUrl_4 = QtGui.QLineEdit(self.tab_2)
         self.txtSourceUrl_4.setObjectName(_fromUtf8("txtSourceUrl_4"))
         self.gridLayout_7.addWidget(self.txtSourceUrl_4, 14, 2, 1, 1)
+        self.label_222 = QtGui.QLabel(self.tab_2)
+        self.label_222.setObjectName(_fromUtf8("label_222"))
+        self.gridLayout_7.addWidget(self.label_222, 2, 1, 1, 1)
         self.tabWidget.addTab(self.tab_2, _fromUtf8(""))
         self.tab_3 = QtGui.QWidget()
         self.tab_3.setObjectName(_fromUtf8("tab_3"))
@@ -1082,10 +1082,10 @@ class Ui_MapcacheXmlGenerator(object):
         self.label_72.setText(_translate("MapcacheXmlGenerator", "connection_timeout", None))
         self.label_76.setText(_translate("MapcacheXmlGenerator", "Referer", None))
         self.label_71.setText(_translate("MapcacheXmlGenerator", "User-Agent", None))
-        self.label_41.setText(_translate("MapcacheXmlGenerator", "url", None))
-        self.label_51.setText(_translate("MapcacheXmlGenerator", "url", None))
-        self.label_61.setText(_translate("MapcacheXmlGenerator", "url", None))
+        self.label_223.setText(_translate("MapcacheXmlGenerator", "url", None))
+        self.label_224.setText(_translate("MapcacheXmlGenerator", "url", None))
         self.label_128.setText(_translate("MapcacheXmlGenerator", "url", None))
+        self.label_222.setText(_translate("MapcacheXmlGenerator", "url", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MapcacheXmlGenerator", "Source", None))
         self.label_20.setText(_translate("MapcacheXmlGenerator", "name", None))
         self.label_199.setText(_translate("MapcacheXmlGenerator", "source", None))

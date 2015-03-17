@@ -728,25 +728,18 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="label_41">
-         <property name="text">
-          <string>url</string>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="2">
         <widget class="QLineEdit" name="txtSourceUrl_1"/>
        </item>
        <item row="6" column="1">
-        <widget class="QLabel" name="label_51">
+        <widget class="QLabel" name="label_223">
          <property name="text">
           <string>url</string>
          </property>
         </widget>
        </item>
        <item row="10" column="1">
-        <widget class="QLabel" name="label_61">
+        <widget class="QLabel" name="label_224">
          <property name="text">
           <string>url</string>
          </property>
@@ -767,6 +760,13 @@
        </item>
        <item row="14" column="2">
         <widget class="QLineEdit" name="txtSourceUrl_4"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_222">
+         <property name="text">
+          <string>url</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>

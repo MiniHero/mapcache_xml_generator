@@ -72,17 +72,111 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
             if(self.txtCacheHost_1.text() != ""):
                 cacheServer1 = etree.Element("server")
                 cacheServerHost1 = etree.Element("host")
-                cacheServerHost1.text = elf.txtCacheHost_1.text()
-                cacheServer1.append(cacheServer1)
+                cacheServerHost1.text = self.txtCacheHost_1.text()
+                cacheServer1.append(cacheServerHost1)
                 if(self.txtCachePort_1.text() != ""):
                     cacheServerPort1 = etree.Element("port")
                     cacheServerPort1.text = self.txtCachePort_1.text()
+                    cacheServer1.append(cacheServerPort1)
                 cache1.append(cacheServer1)
             if(self.txtCacheDbfile_1.text() != ""):
-                cacheDbfile1 = etree.element("dbfile")
+                cacheDbfile1 = etree.Element("dbfile")
                 cacheDbfile1.text = self.txtCacheDbfile_1.text()
                 cache1.append(cacheDbfile1)
             mapcache.append(cache1)
+            
+        if(self.txtCacheName_2.text() != ""):
+            cache2 = etree.Element("cache")
+            cache2.set("name", self.txtCacheName_2.text())
+            if(self.txtCacheType_2.text() != ""):
+                cache2.set("type", self.txtCacheType_2.text())
+            if(self.txtCacheLayout_2.text() != ""):
+                cache2.set("layout", self.txtCacheLayout_2.text())
+            if(self.txtCacheTemplate_2.text() != ""):
+                cacheTemplate2 = etree.Element("template")
+                cacheTemplate2.text = self.txtCacheTemplate_2.text()
+                cache1.append(cacheTemplate2)
+            if(self.txtCacheBase_2.text() != ""):
+                cacheBase2 = etree.Element("base")
+                cacheBase2.text = self.txtCacheTemplate_2.text()
+                cache2.append(cacheBase2)
+            if(self.txtCacheHost_2.text() != ""):
+                cacheServer2 = etree.Element("server")
+                cacheServerHost2 = etree.Element("host")
+                cacheServerHost2.text = self.txtCacheHost_2.text()
+                cacheServer2.append(cacheServerHost2)
+                if(self.txtCachePort_2.text() != ""):
+                    cacheServerPort2 = etree.Element("port")
+                    cacheServerPort2.text = self.txtCachePort_2.text()
+                    cacheServer2.append(cacheServerPort2)
+                cache2.append(cacheServer2)
+            if(self.txtCacheDbfile_2.text() != ""):
+                cacheDbfile2 = etree.Element("dbfile")
+                cacheDbfile2.text = self.txtCacheDbfile_2.text()
+                cache2.append(cacheDbfile2)
+            mapcache.append(cache2)
+            
+        if(self.txtCacheName_3.text() != ""):
+            cache3 = etree.Element("cache")
+            cache3.set("name", self.txtCacheName_3.text())
+            if(self.txtCacheType_1.text() != ""):
+                cache3.set("type", self.txtCacheType_3.text())
+            if(self.txtCacheLayout_1.text() != ""):
+                cache3.set("layout", self.txtCacheLayout_3.text())
+            if(self.txtCacheTemplate_3.text() != ""):
+                cacheTemplate3 = etree.Element("template")
+                cacheTemplate3.text = self.txtCacheTemplate_3.text()
+                cache3.append(cacheTemplate3)
+            if(self.txtCacheBase_3.text() != ""):
+                cacheBase3 = etree.Element("base")
+                cacheBase3.text = self.txtCacheTemplate_3.text()
+                cache3.append(cacheBase3)
+            if(self.txtCacheHost_3.text() != ""):
+                cacheServer3 = etree.Element("server")
+                cacheServerHost3 = etree.Element("host")
+                cacheServerHost3.text = self.txtCacheHost_3.text()
+                cacheServer3.append(cacheServerHost3)
+                if(self.txtCachePort_3.text() != ""):
+                    cacheServerPort3 = etree.Element("port")
+                    cacheServerPort3.text = self.txtCachePort_3.text()
+                    cacheServer3.append(cacheServerPort3)
+                cache3.append(cacheServer3)
+            if(self.txtCacheDbfile_3.text() != ""):
+                cacheDbfile3 = etree.Element("dbfile")
+                cacheDbfile3.text = self.txtCacheDbfile_3.text()
+                cache3.append(cacheDbfile3)
+            mapcache.append(cache3)
+            
+        if(self.txtCacheName_4.text() != ""):
+            cache4 = etree.Element("cache")
+            cache4.set("name", self.txtCacheName_4.text())
+            if(self.txtCacheType_4.text() != ""):
+                cache4.set("type", self.txtCacheType_4.text())
+            if(self.txtCacheLayout_4.text() != ""):
+                cache4.set("layout", self.txtCacheLayout_4.text())
+            if(self.txtCacheTemplate_4.text() != ""):
+                cacheTemplate4 = etree.Element("template")
+                cacheTemplate4.text = self.txtCacheTemplate_4.text()
+                cache4.append(cacheTemplate4)
+            if(self.txtCacheBase_4.text() != ""):
+                cacheBase4 = etree.Element("base")
+                cacheBase4.text = self.txtCacheTemplate_4.text()
+                cache4.append(cacheBase4)
+            if(self.txtCacheHost_4.text() != ""):
+                cacheServer4 = etree.Element("server")
+                cacheServerHost4 = etree.Element("host")
+                cacheServerHost4.text = self.txtCacheHost_4.text()
+                cacheServer4.append(cacheServerHost4)
+                if(self.txtCachePort_4.text() != ""):
+                    cacheServerPort4 = etree.Element("port")
+                    cacheServerPort4.text = self.txtCachePort_4.text()
+                    cacheServer4.append(cacheServerPort4)
+                cache4.append(cacheServer4)
+            if(self.txtCacheDbfile_4.text() != ""):
+                cacheDbfile4 = etree.Element("dbfile")
+                cacheDbfile4.text = self.txtCacheDbfile_4.text()
+                cache4.append(cacheDbfile4)
+            mapcache.append(cache4)
         
         if(self.txtSourceName_1.text() !=""):
             source1 = etree.Element("source")
@@ -97,12 +191,13 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
                 sourceGetmapParams1.append(sourceGetmapParamsFormat1)
                 if(self.txtSourceLayer_1.text() != ""):
                     sourceGetmapParamsLayer1 = etree.Element("LAYERS")
+                    sourceGetmapParamsLayer1.text = self.txtSourceLayer_1.text()
                     sourceGetmapParams1.append(sourceGetmapParamsLayer1)
                 sourceGetmap1.append(sourceGetmapParams1)
                 source1.append(sourceGetmap1)
             if(self.txtSourceUrl_1.text() != ""):
                 sourceHttp1 = etree.Element("http")
-                sourceHttpUrl1 = stree.Element("url")
+                sourceHttpUrl1 = etree.Element("url")
                 sourceHttpUrl1.text = self.txtSourceUrl_1.text()
                 sourceHttp1.append(sourceHttpUrl1)
                 if(self.txtSourceUserAgent_1.text() != ""):
@@ -121,6 +216,123 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
                     sourceHttp1.append(sourceHttpConnectionTimeout1)
                 source1.append(sourceHttp1)
             mapcache.append(source1)
+            
+        if(self.txtSourceName_2.text() !=""):
+            source2 = etree.Element("source")
+            source2.set("name", self.txtSourceName_2.text())
+            if(self.txtSourceType_2.text() != ""):
+                source2.set("type", self.txtSourceType_2.text())
+            if(self.txtSourceFormat_2.text() != ""):
+                sourceGetmap2 = etree.Element("getmap")
+                sourceGetmapParams2 = etree.Element("params")
+                sourceGetmapParamsFormat2 = etree.Element("FORMAT")
+                sourceGetmapParamsFormat2.text = self.txtSourceFormat_2.text()
+                sourceGetmapParams2.append(sourceGetmapParamsFormat2)
+                if(self.txtSourceLayer_2.text() != ""):
+                    sourceGetmapParamsLayer2 = etree.Element("LAYERS")
+                    sourceGetmapParamsLayer2.text = self.txtSourceLayer_2.text()
+                    sourceGetmapParams2.append(sourceGetmapParamsLayer2)
+                sourceGetmap2.append(sourceGetmapParams2)
+                source2.append(sourceGetmap2)
+            if(self.txtSourceUrl_2.text() != ""):
+                sourceHttp2 = etree.Element("http")
+                sourceHttpUrl2 = etree.Element("url")
+                sourceHttpUrl2.text = self.txtSourceUrl_2.text()
+                sourceHttp2.append(sourceHttpUrl2)
+                if(self.txtSourceUserAgent_2.text() != ""):
+                    sourceHttpHeaders2 = etree.Element("headers")
+                    sourceHttpHeadersUserAgent2 = etree.Element("User-Agent")
+                    sourceHttpHeadersUserAgent2.text = self.txtSourceUserAgent_2.text()
+                    sourceHttpHeaders2.append(sourceHttpHeadersUserAgent2)
+                    if(self.txtSourceReferer_2.text() != ""):
+                        sourceHttpHeadersReferer2 = etree.Element("Referer")
+                        sourceHttpHeadersReferer2.text = self.txtSourceReferer_2.text()
+                        sourceHttpHeaders2.append(sourceHttpHeadersReferer2)
+                    sourceHttp2.append(sourceHttpHeaders2)
+                if(self.txtSourceConnectionTimeout_2.text() != ""):
+                    sourceHttpConnectionTimeout2 = etree.Element("connection_timeout")
+                    sourceHttpConnectionTimeout2.text = self.txtSourceConnectionTimeout_2.text()
+                    sourceHttp2.append(sourceHttpConnectionTimeout2)
+                source2.append(sourceHttp2)
+            mapcache.append(source2)
+            
+        if(self.txtSourceName_3.text() !=""):
+            source3 = etree.Element("source")
+            source3.set("name", self.txtSourceName_3.text())
+            if(self.txtSourceType_3.text() != ""):
+                source3.set("type", self.txtSourceType_3.text())
+            if(self.txtSourceFormat_3.text() != ""):
+                sourceGetmap3 = etree.Element("getmap")
+                sourceGetmapParams3 = etree.Element("params")
+                sourceGetmapParamsFormat3 = etree.Element("FORMAT")
+                sourceGetmapParamsFormat3.text = self.txtSourceFormat_3.text()
+                sourceGetmapParams3.append(sourceGetmapParamsFormat3)
+                if(self.txtSourceLayer_3.text() != ""):
+                    sourceGetmapParamsLayer3 = etree.Element("LAYERS")
+                    sourceGetmapParamsLayer3.text = self.txtSourceLayer_3.text()
+                    sourceGetmapParams3.append(sourceGetmapParamsLayer3)
+                sourceGetmap3.append(sourceGetmapParams3)
+                source3.append(sourceGetmap3)
+            if(self.txtSourceUrl_3.text() != ""):
+                sourceHttp3 = etree.Element("http")
+                sourceHttpUrl3 = etree.Element("url")
+                sourceHttpUrl3.text = self.txtSourceUrl_3.text()
+                sourceHttp3.append(sourceHttpUrl3)
+                if(self.txtSourceUserAgent_3.text() != ""):
+                    sourceHttpHeaders3 = etree.Element("headers")
+                    sourceHttpHeadersUserAgent3 = etree.Element("User-Agent")
+                    sourceHttpHeadersUserAgent3.text = self.txtSourceUserAgent_3.text()
+                    sourceHttpHeaders3.append(sourceHttpHeadersUserAgent3)
+                    if(self.txtSourceReferer_3.text() != ""):
+                        sourceHttpHeadersReferer3 = etree.Element("Referer")
+                        sourceHttpHeadersReferer3.text = self.txtSourceReferer_3.text()
+                        sourceHttpHeaders3.append(sourceHttpHeadersReferer3)
+                    sourceHttp3.append(sourceHttpHeaders3)
+                if(self.txtSourceConnectionTimeout_3.text() != ""):
+                    sourceHttpConnectionTimeout3 = etree.Element("connection_timeout")
+                    sourceHttpConnectionTimeout3.text = self.txtSourceConnectionTimeout_3.text()
+                    sourceHttp3.append(sourceHttpConnectionTimeout3)
+                source3.append(sourceHttp3)
+            mapcache.append(source3)
+            
+        if(self.txtSourceName_4.text() !=""):
+            source4 = etree.Element("source")
+            source4.set("name", self.txtSourceName_4.text())
+            if(self.txtSourceType_4.text() != ""):
+                source4.set("type", self.txtSourceType_4.text())
+            if(self.txtSourceFormat_4.text() != ""):
+                sourceGetmap4 = etree.Element("getmap")
+                sourceGetmapParams4 = etree.Element("params")
+                sourceGetmapParamsFormat4 = etree.Element("FORMAT")
+                sourceGetmapParamsFormat4.text = self.txtSourceFormat_4.text()
+                sourceGetmapParams4.append(sourceGetmapParamsFormat4)
+                if(self.txtSourceLayer_4.text() != ""):
+                    sourceGetmapParamsLayer4 = etree.Element("LAYERS")
+                    sourceGetmapParamsLayer4.text = self.txtSourceLayer_4.text()
+                    sourceGetmapParams4.append(sourceGetmapParamsLayer4)
+                sourceGetmap4.append(sourceGetmapParams4)
+                source4.append(sourceGetmap4)
+            if(self.txtSourceUrl_4.text() != ""):
+                sourceHttp4 = etree.Element("http")
+                sourceHttpUrl4 = etree.Element("url")
+                sourceHttpUrl4.text = self.txtSourceUrl_4.text()
+                sourceHttp4.append(sourceHttpUrl4)
+                if(self.txtSourceUserAgent_4.text() != ""):
+                    sourceHttpHeaders4 = etree.Element("headers")
+                    sourceHttpHeadersUserAgent4 = etree.Element("User-Agent")
+                    sourceHttpHeadersUserAgent4.text = self.txtSourceUserAgent_4.text()
+                    sourceHttpHeaders4.append(sourceHttpHeadersUserAgent4)
+                    if(self.txtSourceReferer_4.text() != ""):
+                        sourceHttpHeadersReferer4 = etree.Element("Referer")
+                        sourceHttpHeadersReferer4.text = self.txtSourceReferer_4.text()
+                        sourceHttpHeaders4.append(sourceHttpHeadersReferer4)
+                    sourceHttp4.append(sourceHttpHeaders4)
+                if(self.txtSourceConnectionTimeout_4.text() != ""):
+                    sourceHttpConnectionTimeout4 = etree.Element("connection_timeout")
+                    sourceHttpConnectionTimeout4.text = self.txtSourceConnectionTimeout_4.text()
+                    sourceHttp4.append(sourceHttpConnectionTimeout4)
+                source4.append(sourceHttp4)
+            mapcache.append(source4)
             
         if(self.txtTilesetName.text() != ""):
             tileset = etree.Element("tileset")
@@ -264,7 +476,7 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
             service5.set("type", self.txtServiceType_5.text())
             if(self.txtServiceEnabled_5.text() != ""):
                 service5.set("enabled", self.txtServiceEnabled_5.text())
-            mapcache.append(service2)
+            mapcache.append(service5)
         if(self.txtServiceType_6.text() != ""):
             service6 = etree.Element("service")
             service6.set("type", self.txtServiceType_6.text())
