@@ -562,7 +562,7 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
             otherDedaultFormat.text = self.txtOtherDedaultFormat.text()
             mapcache.append(otherDedaultFormat)
             
-        if(self.txtOtherErrors.texte() != ""):
+        if(self.txtOtherErrors.text() != ""):
             otherErrors = etree.Element("errors")
             otherErrors.text = self.txtOtherErrors.texte()
             mapcache.append(otherErrors)
