@@ -564,7 +564,7 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
             
         if(self.txtOtherErrors.text() != ""):
             otherErrors = etree.Element("errors")
-            otherErrors.text = self.txtOtherErrors.texte()
+            otherErrors.text = self.txtOtherErrors.text()
             mapcache.append(otherErrors)
             
         if(self.txtOtherLockDir.text() != ""):
