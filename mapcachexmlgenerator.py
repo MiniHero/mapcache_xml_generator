@@ -83,6 +83,14 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
                 cacheDbfile1 = etree.Element("dbfile")
                 cacheDbfile1.text = self.txtCacheDbfile_1.text()
                 cache1.append(cacheDbfile1)
+            if(self.txtCacheXcount_1.text() != ""):
+                cacheXcount1 = etree.Element("xcount")
+                cacheXcount1.text = self.txtCacheXcount_1.text()
+                cache1.append(cacheXcount1)
+            if(self.txtCacheYcount_1.text() != ""):
+                cacheYcount1 = etree.Element("ycount")
+                cacheYcount1.text = self.txtCacheYcount_1.text()
+                cache1.append(cacheYcount1)
             mapcache.append(cache1)
             
         if(self.txtCacheName_2.text() != ""):
@@ -114,6 +122,14 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
                 cacheDbfile2 = etree.Element("dbfile")
                 cacheDbfile2.text = self.txtCacheDbfile_2.text()
                 cache2.append(cacheDbfile2)
+            if(self.txtCacheXcount_2.text() != ""):
+                cacheXcount2 = etree.Element("xcount")
+                cacheXcount2.text = self.txtCacheXcount_2.text()
+                cache2.append(cacheXcount2)
+            if(self.txtCacheYcount_2.text() != ""):
+                cacheYcount2 = etree.Element("ycount")
+                cacheYcount2.text = self.txtCacheYcount_2.text()
+                cache2.append(cacheYcount2)
             mapcache.append(cache2)
             
         if(self.txtCacheName_3.text() != ""):
@@ -145,6 +161,14 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
                 cacheDbfile3 = etree.Element("dbfile")
                 cacheDbfile3.text = self.txtCacheDbfile_3.text()
                 cache3.append(cacheDbfile3)
+            if(self.txtCacheXcount_3.text() != ""):
+                cacheXcount3 = etree.Element("xcount")
+                cacheXcount3.text = self.txtCacheXcount_3.text()
+                cache3.append(cacheXcount3)
+            if(self.txtCacheYcount_3.text() != ""):
+                cacheYcount3 = etree.Element("ycount")
+                cacheYcount3.text = self.txtCacheYcount_3.text()
+                cache3.append(cacheYcount3)
             mapcache.append(cache3)
             
         if(self.txtCacheName_4.text() != ""):
@@ -176,6 +200,14 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
                 cacheDbfile4 = etree.Element("dbfile")
                 cacheDbfile4.text = self.txtCacheDbfile_4.text()
                 cache4.append(cacheDbfile4)
+            if(self.txtCacheXcount_4.text() != ""):
+                cacheXcount4 = etree.Element("xcount")
+                cacheXcount4.text = self.txtCacheXcount_4.text()
+                cache4.append(cacheXcount4)
+            if(self.txtCacheYcount_1.text() != ""):
+                cacheYcount4 = etree.Element("ycount")
+                cacheYcount4.text = self.txtCacheYcount_4.text()
+                cache4.append(cacheYcount4)
             mapcache.append(cache4)
         
         if(self.txtSourceName_1.text() !=""):
@@ -525,6 +557,30 @@ class MapcacheXmlGenerator(QDialog, Ui_MapcacheXmlGenerator):
                 grid.append(gridMetadata)
             mapcache.append(grid)
             
+        if(self.txtOtherDedaultFormat.text() != ""):
+            otherDedaultFormat = etree.Element("default_format")
+            otherDedaultFormat.text = self.txtOtherDedaultFormat.text()
+            mapcache.append(otherDedaultFormat)
+            
+        if(self.txtOtherErrors.texte() != ""):
+            otherErrors = etree.Element("errors")
+            otherErrors.text = self.txtOtherErrors.texte()
+            mapcache.append(otherErrors)
+            
+        if(self.txtOtherLockDir.text() != ""):
+            otherLockDir = etree.Element("lock_dir")
+            otherLockDir.text = self.txtOtherLockDir.text()
+            mapcache.append(otherLockDir)
+            
+        if(self.txtOtherLogLevel.text() != ""):
+            otherLogLevel = etree.Element("log_level")
+            otherLogLevel.text = self.txtOtherLogLevel.text()
+            mapcache.append(otherLogLevel)
+            
+        if(self.txtOtherAutoLoad.text() != ""):
+            otherAutoLoad = etree.Element("auto_reload")
+            otherAutoLoad.text = self.txtOtherAutoLoad.text()
+            mapcache.append(otherAutoLoad)
                 
 
         s = etree.tostring(mapcache)
